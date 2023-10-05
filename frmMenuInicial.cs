@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace AppSorveteriaSimples
 {
-    public partial class Form1 : Form
+    public partial class frmMenuInicial : Form
     {
-        public Form1()
+        public frmMenuInicial()
         {
             InitializeComponent();
+        }
+
+        private void btnProdutos_Click(object sender, EventArgs e)
+        {
+            frmProdutos frm_produtos = new frmProdutos();
+
+            frm_produtos.ShowDialog();
         }
     }
 }
